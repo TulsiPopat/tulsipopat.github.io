@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<title>Welcome</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('https://www.pixelstalk.net/wp-content/uploads/2016/07/Computer-Science-Background.jpg');
+  min-height: 50%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("https://schoolsweek.co.uk/wp-content/uploads/2018/09/Computing-feat.jpg");
+  min-height: 50%;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("https://i.pinimg.com/originals/1c/54/9a/1c549a9d1bedbfd5c63a7c8c665fea0a.jpg");
+  min-height: 50%;
+}
+
+/*fourth image(Experience) */
+.bgimg-4 {
+  background-image: url("https://caribbeantradelaw.files.wordpress.com/2012/01/contact-us-1908762_960_720.png?w=816");
+  min-height: 50%;
+}
+
+.
+
+.text {
+  background-color: #4CAF50;
+  color: black;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4{
+    background-attachment: scroll;
+    min-height: 50%;
+  }
+
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button w3-text-white">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-text-white"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small w3-text-white"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-hide-small w3-text-white"><i class="fa fa-laptop"></i> EXPERIENCE
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-text-white"><i class="fa fa-envelope"></i> CONTACT</a>
+    </a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="#experience" class="w3-bar-item w3-button" onclick="toggleFunction()">EXPERIENCE</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>    
+
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">Hi I'm Tulsi...</span></span><br>
+     <br>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">Welcome to my website</span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em></em></p>
+  <p>Welcome to my website. I am currently pursuing my interest in Computer Science at university as well as doing projects on the side - if you're interested in seeing more about my projects please head over to the Portfolio section.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>Tulsi Popat</b></p><br>
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>--> I'm currently in second year of Computer Science at King's College London, on track for a First Class degree</p>
+      <p>--> Educated at St Helen's School London (2004 - 2019)</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Things I'm good at and interested in:</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Software Engineering</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Web Development and Design</p>
+  <p class="w3-wide"><i class="fa fa-laptop"></i>Mobile App Development</p>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">Proficient in:</span><br>
+    Java, Python, JavaScript & SQL
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">Experience in:</span><br>
+    React, HTML, CSS, C++, Scala
+  </div>
+  <div class="w3-third w3-section">
+    <span class="w3-xlarge">15+</span><br>
+    Projects
+  </div>
+  
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">MY WORK:</h3>
+  <p class="w3-center"><em>Here are my current main projects. To see more of my projects and coding please visit my GitHub <br> Click on the images below to view more detail about each of them</em></p><br>
+
+  <!-- Responsive Grid.  columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-center"> 
+    <div class="w3-col m3">
+      <img src="https://cdn.xl.thumbs.canstockphoto.com/the-staff-of-hermes-drawing_csp70621093.jpg" style="height: 200px" onclick="onClick(this)" class="w3-hover-opacity" alt="This represents the hospital system where theres an advanced backend based on PostgreSQL and ....">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://cdn.iconscout.com/icon/free/png-256/social-258-116292.png" style="height: 200px" onclick="onClick(this)" class="w3-hover-opacity" alt="This a university team project where we had a database of properties and via Google Maps integration we can display all the properties on the map. You can also filter all these properties by a certain category eg.location. This app was developed mainly using JavaFX - to view the project feel free to look at my GitHub (the link is provided on the main page">
+    </div>
+  </div>
+
+  <div class="w3-center w3-section">
+    <div class="w3-col m3">
+      <img src= "https://static-s.aa-cdn.net/img/amazon/30600000320632/737e8e6253ed46038438f867a68f802e?v=1" style="height: 200px;width:89%" onclick="onClick(this)" class="w3-hover-opacity" alt="blah blah blah">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://thumbs.dreamstime.com/b/brain-icon-logo-design-element-can-be-used-as-as-complement-to-95229355.jpg" style="height: 200px" onclick="onClick(this)" class="w3-hover-opacity" alt="SmartBrain WebApp">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third parallax image with Experience Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">EXPERIENCE</span>
+  </div>
+</div>
+
+
+<!-- Container (Experience Section) -->
+<div class="w3-content w3-container w3-padding-64" id="experience">
+  <h3 class="w3-center">MY EXPERIENCES:</h3>
+  <p class="w3-center"><em>Here are my current experiences.<br> Click on the images below to view more detail about each of them</em></p><br>
+  <br>
+
+  <div class="w3-center"> 
+    <div class="w3-col m3">
+      <img src="https://cdn.searchenginejournal.com/wp-content/uploads/2019/11/e8d53e91-3831-4429-8ba7-b5c290a5ba98-5dc0b9c0642a3.gif" style="height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="I participated in the Facebook 2020 UK and Ireland virtual hackathon. This involved a series of coding challenges, follows by some Product Thinking. We were given a scenario and we had to think about what kind of technological device or interface of some sort to invent in order to be able to carry out our aim. Our scenario was the integration of animals into human society. My team came up with the idea of havig Augmented Reality platform that allow the animals to interactively learn how to communicate with animals and having a shared area where humans and animals can exchange skills ">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="data:image/jpeg;base64,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" style="height: 150px" onclick="onClick(this)" class="w3-hover-opacity" alt="I participated in a Robotics hackathon in 2019. During this hackathon I programmed a robotic car to be controlled by an Arduino. The car autonomously navigates a track via localisation and mapping through sensors detecting different colours and obstacles">
+    </div>
+  </div>
+
+  <div class="w3-center w3-section">
+    <div class="w3-col m3">
+      <img src= "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1DidWcol_oiwufeMkeX--zIm-DLtvplgsPw&usqp=CAU" style="height: 150px;width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I completed a Deloitte virtual internship. During this internship I produced an in depth project on Cloud Computing and its potential incorporation into the Australian University System. I focused on areas of software Development such as risk assessment and feasibility study. Nurtured useful skills eg. Critical Thinking, application prioiritisation and benefit analysis">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRnGrtrR9UxtavNvExJrliRGh8zPUHry950YQ&usqp=CAU" style="height: 130px" onclick="onClick(this)" class="w3-hover-opacity" alt="JP Morgan">
+    </div>
+  </div>
+
+  </div>
+
+
+<!-- fourth Parallax Image with Portfolio Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-black w3-wide">CONTACT ME</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACT INFORMATION:</h3>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> London, UK<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: tulsi.popat108@gmail.com<br>
+        <i class="fa fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i><a href="https://www.linkedin.com/in/tulsipopat/" target="_blank"> My LinkedIn profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-black";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-black", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
